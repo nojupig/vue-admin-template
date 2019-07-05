@@ -90,6 +90,21 @@ export const constantRoutes = [
     ]
   },
 
+
+  
+  {
+    path: '/topod',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'topod',
+        component: () => import('@/views/topod/index'),
+        meta: { title: 'topod', icon: 'form' }
+      }
+    ]
+  },
+
   {
     path: '/nested',
     component: Layout,
